@@ -28,7 +28,7 @@ export default function Layout({children}) {
    <main>{children}</main>
    
    <footer>
-    2002 web: Juan Pablo Baez
+   <p>&copy; Juan Pablo Baez {new Date().getFullYear()}</p>  
    </footer>
    
    </div>

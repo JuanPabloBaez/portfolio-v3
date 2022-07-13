@@ -13,4 +13,31 @@ nav{
         height: 7vh;
         aspect-ratio: 1/1;
     }
+}
+
+.nav-web:hover{
+    color: $colorPalette2;  
+}
+.nav-video:hover{
+    color:hsl(253, 8%, 80%);  
+}
+.nav-image:hover{
+    color: $colorPalette3;
+}
+.nav-board:hover::after{
+    content: "!"
+    
+}
+
+main{
+    min-height: 86vh;
+}
+
+footer{
+    height: 4vh;
+      padding: 1%;
+      margin-bottom: 0;
+      margin-top: auto;
+      display: flex;
+      align-items: center;
   }
