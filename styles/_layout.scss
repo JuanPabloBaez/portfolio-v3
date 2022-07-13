@@ -1,0 +1,16 @@
+nav{
+    height: 10vh;
+    background-color: black;
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1vh;
+    gap: 15px;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.4rem;
+    img{
+        height: 7vh;
+        aspect-ratio: 1/1;
+    }
+  }

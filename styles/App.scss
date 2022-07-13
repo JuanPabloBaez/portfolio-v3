@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Rokkitt:wght@100;200;300;400;500;600;700;800&display=swap');
+@import "./layout";
+
+$colorPalette1:#33313B;
+$colorPalette2:#FFC85C;
+$colorPalette3:#2C786C;
+$colorPalette4:#33313B;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+    color: currentColor
+  }
+  .body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  
