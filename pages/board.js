@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import ReactPlayer from 'react-player';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -26,6 +27,30 @@ export default function Board({posts}) {
   
 
   return (
+    <>
+    <Head>
+        <title>JP Baez portfolio | Web Development &#38; Video Production </title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="../public/favicon.ico?" type="image/x-icon" />
+        <link rel="shortcut icon" href="../public/favicon.ico?" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" /> 
+        <meta
+            name="description"
+            content="Portfolio Juan Pablo Baez. Web Development and Video Production. Based in Berlin, Germany."
+        />
+        <meta property="og:url" content="http://jpbaez.com/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Juan Pablo Baez - Portfolio"/>
+        <meta property="og:description" content="Personal portfolio of Juan Pablo Baez, frontend web developer (Javascript, React) and video producer."/>
+        <meta property="og:image" content="../public/metaLogo.jpg"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="http://jpbaez.com/"/>
+        <meta property="twitter:url" content="http://jpbaez.com/"/>
+        <meta name="twitter:title" content="Juan Pablo Baez - Portfolio"/>
+        <meta name="twitter:description" content="Personal portfolio of Juan Pablo Baez, frontend web developer (Javascript, React) and video producer."/>
+        <meta name="twitter:image" content="../public//metaLogo.jpg"/>
+    </Head>
     <div className="board-body">
         <h1>Board</h1>
         {posts.map((post, index)=> {
@@ -83,6 +108,7 @@ export default function Board({posts}) {
             )
         })}
     </div>
+    </>
   )
 }
 
