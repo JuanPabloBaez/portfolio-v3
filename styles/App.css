@@ -223,7 +223,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 3%;
+  gap: 2%;
   background-color: #33313B;
 }
 
@@ -239,6 +239,186 @@ footer {
 
 .video-body a:hover {
   text-decoration: line-through;
+}
+
+.gallery-body {
+  height: 87vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-color: #2C786C;
+}
+
+.gallery-body button {
+  position: absolute;
+  top: 3%;
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+  color: ghostwhite;
+}
+
+.swiper {
+  height: 80%;
+  display: block;
+  width: 90%;
+  max-width: 900px;
+}
+
+.swiper-wraper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.slide-photo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #f5f5ff !important;
+}
+
+.board-body {
+  min-height: 80vh;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.board-body h1 {
+  margin: 5vh 15vw 3vh 0;
+  text-align: right;
+  font-weight: 200;
+  font-size: 2.7em;
+}
+
+.board-body a {
+  text-decoration: none;
+  color: #676767;
+}
+
+.post-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 20vh;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.post-container h2 {
+  font-size: 1.6em;
+  margin: 1%;
+}
+
+.post-container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+  margin: 0 0 1% 2%;
+  font-size: .9rem;
+}
+
+.post-main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.post-main-text .main-photo {
+  float: none;
+  max-height: 35vh;
+  max-width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.post-main-content {
+  margin: auto auto 1% 0%;
+  text-align: justify;
+}
+
+.post-main-content2 {
+  margin: 1% auto;
+  text-align: justify;
+}
+
+.swiper-container {
+  margin: 3% auto;
+}
+
+.board-photo {
+  max-height: 35vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 3% 0;
+}
+
+.board-player {
+  margin: 3% auto;
+  width: 95%;
+  max-width: 600px;
+}
+
+hr {
+  color: black;
+  border-top: 1px solid black;
+  width: 50%;
+  max-width: 600px;
+  margin: 2% auto 6% auto;
+}
+
+@media (min-width: 600px) {
+  .post-main-text {
+    display: block;
+  }
+  .main-photo {
+    float: left !important;
+    margin-right: 2%;
+  }
 }
 
 * {
