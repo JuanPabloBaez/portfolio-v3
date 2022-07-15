@@ -6,6 +6,7 @@ function Web() {
     <Head>
         <title>JP Baez portfolio | Web Development &#38; Video Production </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        
         <link rel="icon" href="../public/favicon.ico?" type="image/x-icon" />
         <link rel="shortcut icon" href="../public/favicon.ico?" type="image/x-icon" />
         <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" /> 

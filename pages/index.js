@@ -57,10 +57,10 @@ export default function Home( ) {
                     </div>
                     
                     <div className="social-icons">
-                        <a href="mailto:contact@jpbaez.com" target="_blank"  rel="noreferrer" ><img className="social-icon" src={mailLogo.src} alt="vimeo logo"/></a>
-                        <a href="https://www.linkedin.com/in/juan-pablo-baez-4b592235/" target="_blank"  rel="noreferrer" ><img className="social-icon" src={inLogo.src} alt="linkendin logo"/></a>
-                        <a href="https://github.com/JuanPabloBaez" target="_blank"  rel="noreferrer" ><img className="social-icon" src={githubLogo.src} alt="github logo"/></a>
-                        <a href="https://www.instagram.com/jp_baez/" target="_blank"  rel="noreferrer" ><img className="social-icon" src={InstagramLogo.src} alt="instagram logo"/></a>
+                        <a href="mailto:contact@jpbaez.com" target="_blank"  rel="noreferrer" ><img className="social-icon" src={mailLogo.src} alt="vimeo logo"height={60} width={60}/></a>
+                        <a href="https://www.linkedin.com/in/juan-pablo-baez-4b592235/" target="_blank"  rel="noreferrer" ><img className="social-icon" src={inLogo.src} alt="linkendin logo" height={60} width={60}/></a>
+                        <a href="https://github.com/JuanPabloBaez" target="_blank"  rel="noreferrer" ><img className="social-icon" src={githubLogo.src} alt="github logo"height={60} width={60}/></a>
+                        <a href="https://www.instagram.com/jp_baez/" target="_blank"  rel="noreferrer" ><img className="social-icon" src={InstagramLogo.src} alt="instagram logo"height={60} width={60}/></a>
                     </div>
                 </div>
                 
