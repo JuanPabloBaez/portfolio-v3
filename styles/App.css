@@ -13,13 +13,13 @@ nav {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 1vh;
-  gap: 15px;
+  gap: 25px;
   font-family: 'Rokkitt', serif;
   font-size: 1.4rem;
 }
 
 nav img {
-  height: 7vh;
+  height: 7.4vh;
   aspect-ratio: 1/1;
 }
 
@@ -365,7 +365,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
 }
 
 .post-main-text .main-photo {
@@ -374,6 +373,7 @@ footer {
   max-width: 90%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0 auto 2% auto;
 }
 
 .post-main-content {
@@ -417,7 +417,8 @@ hr {
   }
   .main-photo {
     float: left !important;
-    margin-right: 2%;
+    margin: 0 2% 0 0 !important;
+    max-width: 50% !important;
   }
 }
 

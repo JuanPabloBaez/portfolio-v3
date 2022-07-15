@@ -39,13 +39,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
    
     .main-photo{
         float: none;
         max-height: 35vh;
         max-width: 90%;
         object-fit: contain;
+        margin: 0 auto 2% auto;
         
     }
 }
@@ -88,7 +88,9 @@ hr {
     }
     .main-photo {
         float: left !important;
-        margin-right: 2%;
+        margin: 0 2% 0 0 !important;
+        max-width: 50% !important;
+
        
     }
 }

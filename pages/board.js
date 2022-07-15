@@ -23,7 +23,7 @@ export async function getStaticProps(){
 
 export default function Board({posts}) {
  
-  console.log(posts)
+  
 
   return (
     <div className="board-body">
@@ -57,19 +57,7 @@ export default function Board({posts}) {
                     <div className="post-main-text">
                         {mainPicture && <img className='main-photo' src={mainPicture.fields.file.url} alt={header}/>}
                         <div className='post-main-content'>{documentToReactComponents(mainContent1)}</div>
-                        {/* <RichText 
-                            richText={mainContent1}
-                            overrides={{
-                                [BLOCKS.PARAGRAPH]: {
-                                    component: "p",
-                                    props: {
-                                    className: 'post-main-content'
-                                    }
-                                }
-                            }}
-                        /> */}
                     </div>
-
                     {media && media.length ===1 ? <img className="board-photo" src={post.fields.media[0].fields.file.url}  alt="post related"  />:null}
                     {media && media.length > 1 ? <Swiper
                         spaceBetween={50}
