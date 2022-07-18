@@ -95,7 +95,7 @@ export default function Board({posts}) {
                     { media.map((photo, index )=> {
                         return (
                             <SwiperSlide key={index}>
-                                <img className="board-photo" src={`https:${photo.fields.file.url}`}  alt="post related"  />
+                                <Image className="board-photo" src={`https:${photo.fields.file.url}`}  alt="post related"  />
                             </SwiperSlide>
                         )
                     })}  
