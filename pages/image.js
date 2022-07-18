@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Head from 'next/head';
+import Imagen from 'next/future/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/css';
@@ -29,7 +30,7 @@ function Image({image}) {
       return Object.values(image).map(item => item.fields.title === selector ? setGalleryItem(item.fields.images):null )
     }
     selectImages();
-   },[selector])
+   },[selector, image])
 
   function handleGallery () {
     selector ==="collage" ? setSelector("photos") : setSelector("collage")
@@ -64,17 +65,19 @@ function Image({image}) {
     <div className="gallery-body" >
       <button onClick={handleGallery} >{selector==="collage" ? <p><b>Collage</b> / Photography</p>: <p>Collage / <b>Photography</b> </p>}</button>
       <Swiper
-        spaceBetween={50}
+        spaceBetween={40}
         slidesPerView={1}
         navigation
         loop={true}
       >
         {galleryItem.map((item,index)=>{
+          let source = `https:${item.fields.file.url}` ;
           return(
             <SwiperSlide key={index}>
-              <img className="slide-photo" src={item.fields.file.url}  alt={`gallery ${item}`} draggable={false}  />
+              <Imagen className="slide-photo" src={source}  alt={`gallery ${item}`} draggable={false}  />
             </SwiperSlide>
           )
+          
         })}
       </Swiper>
     </div>

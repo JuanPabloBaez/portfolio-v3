@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Logo from'../public/logo.svg';
 
 
@@ -16,7 +16,7 @@ export default function Layout({children}) {
           <a className='nav-video'>video</a>
         </Link>
         <Link href="/">
-          <a><img src={Logo.src}  alt="Home Logo"  /></a>   
+          <a><Image src={Logo.src}  alt="Home Logo"  /></a>   
         </Link>
         <Link href="/image">
           <a className='nav-image'>image</a>

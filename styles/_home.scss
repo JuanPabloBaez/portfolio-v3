@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -6;
+   
 }
 .hello {
     display: flex;
@@ -19,6 +19,7 @@
     max-width: 75vh;
     font-size: 1.4rem;
     font-family: 'Raleway', sans-serif;
+    z-index: 1;
     #background-video{
         height: inherit;
         max-width: 100%;
@@ -38,6 +39,7 @@
     align-items: center;
     background-color: hsla(240, 100%, 99%, 0.9);
     gap: 4%;
+   
     .hi{
         width: fit-content;
     }
@@ -72,6 +74,7 @@
     }
     img{
        height: inherit;
+       width: auto;
        object-fit: contain;
        
        

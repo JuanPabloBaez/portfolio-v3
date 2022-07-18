@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/future/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import ReactPlayer from 'react-player';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -80,10 +81,10 @@ export default function Board({posts}) {
                         })()}
                     </span>
                     <div className="post-main-text">
-                        {mainPicture && <img className='main-photo' src={mainPicture.fields.file.url} alt={header}/>}
+                        {mainPicture && <Image className='main-photo' src={`https:${mainPicture.fields.file.url}`} alt={header}/>}
                         <div className='post-main-content'>{documentToReactComponents(mainContent1)}</div>
                     </div>
-                    {media && media.length ===1 ? <img className="board-photo" src={post.fields.media[0].fields.file.url}  alt="post related"  />:null}
+                    {media && media.length ===1 ? <Image className="board-photo" src={`https:${post.fields.media[0].fields.file.url}`}  alt="post related"  />:null}
                     {media && media.length > 1 ? <Swiper
                         spaceBetween={50}
                         slidesPerView={1}
@@ -94,7 +95,7 @@ export default function Board({posts}) {
                     { media.map((photo, index )=> {
                         return (
                             <SwiperSlide key={index}>
-                                <img className="board-photo" src={photo.fields.file.url}  alt="post related"  />
+                                <img className="board-photo" src={`https:${photo.fields.file.url}`}  alt="post related"  />
                             </SwiperSlide>
                         )
                     })}  
