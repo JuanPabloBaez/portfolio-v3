@@ -1,6 +1,22 @@
 import Head from 'next/head';
 
-function Web() {
+export async function getStaticProps(){
+  const client = require('contentful').createClient({
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+  })
+  const res = await client.getEntries({content_type:'web'})
+  const pages = res.items[0].fields.website
+  
+  return {
+    props:{
+      pages
+    }
+  }
+}
+
+function Web({pages}) {
+
   return (
   <>
     <Head>
@@ -27,11 +43,20 @@ function Web() {
         <meta name="twitter:description" content="Personal portfolio of Juan Pablo Baez, frontend web developer (Javascript, React) and video producer."/>
         <meta name="twitter:image" content="/metaLogo.jpg"/>
     </Head>
-    <div className="web-body">    
-      <span><p className="web-title">jpbaez.com</p> / <b>tech stack:</b> React, SaSS, Contentful(CMS)</span>
-      <span><a href="http://beatkino.com/" target="_blank"  rel="noreferrer">beatkino.com</a>  (film stream platform) / <b>tech stack:</b> React, Redux, SaSS, Node.js, MongoDB</span>
-      <span><a href="https://carloslertora.cl" target="_blank"  rel="noreferrer">carloslertora.cl</a>  (personal portfolio) / <b>tech stack:</b> React, CSS, Contentful (CMS)</span>
-      <span><a href="https://www.alejandroarevalo.cl/" target="_blank"  rel="noreferrer">alejandroarevalo.cl</a>  (personal portfolio) / <b>tech stack:</b> React, Recoil, SaSS, Contentful (CMS)</span>
+    <div className="web-body">
+      {
+        pages.map((item,index)=>{
+
+          return(
+            <span key={index}>
+              {item.link===""? <p className="web-title">{item.title}</p> : <a href={item.link} target="_blank"  rel="noreferrer">{item.title}</a> }
+              {item.description==="" ? null : <> ({item.description})</> }
+             <b>   /tech stack:</b> {item.stack}
+            </span>
+          )
+        
+        })
+      }    
     </div>
   </>
   )
