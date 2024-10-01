@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Head from 'next/head';
-import Imagen from 'next/future/image';
+import Imagen from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/css';

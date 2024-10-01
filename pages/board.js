@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import ReactPlayer from 'react-player';
 import { Swiper, SwiperSlide } from 'swiper/react';
