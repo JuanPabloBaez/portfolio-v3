@@ -43,17 +43,18 @@ export default function Home( ) {
                     <div className='hi'>
                     <p>{"I'm Juan Pablo,"}</p>
                     <div className="greet-icons"> 
-                        <svg id="i-code" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3">
-                            <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
-                        </svg>
-                        web developer and </div>
-                        <div className="greet-icons">    
                         <svg id="i-video" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3">
                             <path d="M22 13 L30 8 30 24 22 19 Z M2 8 L2 24 22 24 22 8 Z" />
                         </svg>
                         video producer
+                         and </div>
+                         <div className="greet-icons">  
+                        <svg id="i-code" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3">
+                            <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />
+                        </svg>
+                        web developer
                     </div> 
-                    <p>I also run <a href="http://beatkino.com/" target="_blank"  rel="noreferrer"> beatkino.com</a> <br/> On this site you can find a diverse selection of my work. <br/> {"I'm currently based in Berlin."}</p>  
+                    <p>I also run <a href="http://beatkino.com/" target="_blank"  rel="noreferrer"> beatkino.com</a> <br/> On this site you can find a diverse selection of my work. <br/> {"Based in Germany"}</p>  
                     </div>
                     
                     <div className="social-icons">

@@ -10,19 +10,19 @@ export default function Layout({children}) {
    <div className='body'>
    <nav>
         <Link href="/web">
-          <a className='nav-web'>web</a>
+          <p className='nav-web'>web</p>
         </Link>
         <Link href="/video">
-          <a className='nav-video'>video</a>
+          <p className='nav-video'>video</p>
         </Link>
         <Link href="/">
-          <a><Image src={Logo.src}  alt="Home Logo"  /></a>   
+          <p><Image src={Logo.src} height={90} width={90} alt="Home Logo"  /></p>   
         </Link>
         <Link href="/image">
-          <a className='nav-image'>image</a>
+          <p className='nav-image'>image</p>
         </Link>
         <Link href="/board">
-          <a className='nav-board'>board</a>
+          <p className='nav-board'>board</p>
         </Link>
    </nav>
    <main>{children}</main>
